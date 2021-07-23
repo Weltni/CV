@@ -1,0 +1,305 @@
+
+
+
+/* Generaux */
+
+
+*{
+    font-family: Avenir, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+
+/* Titre */
+
+
+h1{
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-right: 15px;
+    margin-left: 16px;
+    text-align: center;
+    
+}
+
+h2{
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-style: italic;
+    
+}
+
+
+h3{
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    text-align: center; 
+    text-decoration: underline;
+    font-style: oblique;
+}
+
+h4{
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+h1, h2, h3, h4, p {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Paragraphe */
+p{
+    padding-left: 10px;   
+    margin-top: 6px;
+    margin-bottom: 6px;
+    
+}
+
+/* test */
+
+.hobby{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 0px;
+}
+
+/*Div */
+
+.lieu{
+    font-size: 20px;
+    color: blue;
+    font-family: 'Zen Loop', cursive;
+}
+
+.annees {
+    font-size: 20px;
+    color: blue;
+    font-family: 'Zen Loop', cursive;
+}
+
+
+/* Centre d'intérêt et langues */
+
+
+.langues{
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+figcaption{
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+
+
+
+/* image */
+
+.hobby img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px #555;
+}
+
+.photo img{
+    width: 150px;
+    height: 150px;
+    border: 3px solid #fff;
+    box-shadow: 0px 0px 10px #777;
+    border-radius: 50%;
+}
+
+.langues img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-left: 15px;
+    box-shadow: 0px 0px 15px #555;
+}
+
+/* Competence */
+
+.skills{
+    width: 250px;
+    align-items: center;
+}
+
+.skills .li{
+
+    margin: 20px 0 ;
+}
+
+.bar    {
+    background: #353b48;
+    display: block;
+    height: 2px;
+    border: 1px solid rgba(0, 0, 0, 0, 3);
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #2187e7b3 ;
+}
+.bar span{
+    height: 2px;
+    float: left;
+    background: #2187e7b3;
+}
+
+.html{
+    width: 80%;
+}
+
+.css{
+    width: 80%;
+}
+
+.javascript{
+    width: 20%;
+}
+h5{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.lieu{
+
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.annees{
+
+    text-align: right;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 749px){
+
+*{
+    background-color: #DCDCDC;
+}
+
+
+.Langues{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+/* Photo Hr */
+
+.photo{
+    text-align: center;
+}
+
+
+hr{
+height: 5px;
+background-color: #D6DFE6;
+width: 100%;
+margin-top: 10px;
+margin-bottom: 10px;
+border: solid 3px #695C44;
+border-radius: 10px 10px;
+box-shadow: 0px 0px 10px #93C4EA;
+}   
+
+.skills{
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+.Hobbys{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  
+}
+
+}
+
+/* Media ecran > 750 px */
+
+
+@media (min-width: 750px){
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-height: 1500px;
+        align-content: center;
+ 
+    }
+
+    header{
+        max-width:220px;
+        height:max-content;
+        padding-right: 20px;
+        float: left;
+        text-align: center;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        background-color: lightblue;
+    }
+
+    .photo, .prez, .Langues, .contact, .skills {
+
+        max-width:220px;
+        height:max-content;
+        padding-right: 20px;
+        text-align: center;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        background-color: lightblue;
+        clear:unset;
+        
+    }
+
+    hr{
+        	border: 0;
+    }
+
+    .Formation, .Experience, .Hobbys{
+        max-width: 440px;
+        height:max-content;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .Langues{
+        order: 0;
+    }
+    
+    .Formation, .Experience{
+        order: 1;
+    }
+    .Hobbys{
+        order: 2;
+    }
+
+    .Hobbys{
+    clear: unset;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  
+    }
+}
